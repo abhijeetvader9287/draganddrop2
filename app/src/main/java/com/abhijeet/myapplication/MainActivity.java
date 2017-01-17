@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity  implements View.OnTouchListener,View.OnDragListener {
- 
+
     Drawable enterShape;
     Drawable normalShape  ;
     @Override
@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnTouchList
                 break;
             case DragEvent.ACTION_DROP:
                 // Dropped, reassign View to ViewGroup
-                View view = (View) event.getLocalState();
+                View view = (View) event.getLocalState();//source view
                 ViewGroup owner = (ViewGroup) view.getParent();
                 owner.removeView(view);
-                LinearLayout container = (LinearLayout) v;
+                LinearLayout container = (LinearLayout) v;//destination view
                 container.addView(view);
               /*  view.setVisibility(View.VISIBLE);*/
                 break;
