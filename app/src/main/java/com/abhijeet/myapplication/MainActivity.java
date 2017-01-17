@@ -10,11 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity  implements View.OnTouchListener,View.OnDragListener {
-    ImageView tennisball;
-    ImageView rugbyball;
-    ImageView soccerball;
-    LinearLayout top_container;
-    LinearLayout bottom_container;
+ 
     Drawable enterShape;
     Drawable normalShape  ;
     @Override
